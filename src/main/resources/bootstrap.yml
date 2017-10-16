@@ -1,0 +1,16 @@
+release.zone: dev
+
+spring:
+  application:
+    name: ${release.zone}-test-health
+  config:
+    name: test-health
+  cloud:
+    bus:
+      enabled: false
+    consul:
+      enabled: false
+    config:
+      enabled: false
+    discovery:
+      enabled: false
